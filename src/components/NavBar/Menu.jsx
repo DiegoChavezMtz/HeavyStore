@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 function Menu(props) {
     let styleMenu = {
@@ -7,9 +8,9 @@ function Menu(props) {
     }
   return (
     <ul className="nav-menu" style={styleMenu}>
-            <li className='link-menu'><a href="./">Sueltas</a></li>
-            <li className='link-menu'><a href="./">Producto Cerrado</a></li>
-            <li className='link-menu'><a href="./">Articulos</a></li>
+            <li className='link-menu'><Link to="/category/single">Sueltas</Link></li>
+            <li className='link-menu'><Link to="/category/package">Producto Cerrado</Link></li>
+            
     </ul>
   )
 }
